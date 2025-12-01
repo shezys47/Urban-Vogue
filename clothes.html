@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Vogue</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <Nav>
+            <h1 class="wishlist">Urban Vogue</h1>
+            <a href="./index.html">Home</a>
+            <a href="./clothes.html" class="active">Clothes</a>
+            <a href="./shoes.html">Shoes</a>
+            <a href="./fragrances.html">Fragrances</a>
+           
+        </Nav>
+    </header>
+    <br>
+    <main>
+        <h2 style="color: black; -webkit-text-stroke: 0.5px white;"id="upper-wear">Upper Wear</h2>
+        <div class="product-card reveal">
+        <div class="category">
+            <div class="item">
+                <img src="./IMG-20251116-WA0023.jpg" alt="Black Baby Tee">
+                <h3>Black Baby Tee</h3>
+                <p class="price">1,799pkr</p>
+                <a href="https://www.khushposh.co/products/baby-tee-men?variant=46337375469734" target="_blank">View Online</a>
+            </div></div>
+    
+            <div class="product-card reveal">
+            <div class="item">
+                <img src="./IMG-20251116-WA0022.jpg" alt="Crystal Blue Oxford Shirt">
+                <h3>Crystal Blue Oxford Shirt</h3>
+                <p class="price">2,190pkr</p>
+                <a href="https://outfitters.com.pk/collections/men-shirt-sale/products/f0912-103?variant=44291899097279" target="_blank">View Online</a>
+            </div></div>
+            
+        </div>
+    
+    
+        <h2 style="color: black; -webkit-text-stroke: 0.5px white;"id="bottom-wear">Bottom Wear</h2>
+        <div class="product-card reveal">  
+        <div class="category">
+            <div class="item">
+                <img src="IMG-20251116-WA0025.jpg" alt="Gray Bootcut Jeans">
+                <h3>Gray Bootcut Jeans</h3>
+                <p class="price">Rs 2,500</p>
+                <a href="https://breakout.com.pk/products/5csmd493-gry?_pos=4&_sid=9a8f0f2f0&_ss=r" target="_blank">View Online</a>
+            </div></div>
+        <div class="product-card reveal"> 
+            <div class="item">
+                <img src="./IMG-20251116-WA0024.jpg" alt="Gray Wide Leg Jeans">
+                <h3>Gray Wide Leg Jeans</h3>
+                <p class="price">Rs 1,499</p>
+                <a href="https://lessthan1thousand.com/products/zara-light-grey-wide-leg-jeans-6" target="_blank">View Online</a>
+            </div></div>
+            <div class="product-card reveal"> 
+            <div class="item">
+                <img src="./IMG-20251116-WA0021.jpg" alt="Ice Blue Wide Leg Jeans">
+                <h3>Ice Blue Wide Leg Jeans</h3>
+                <p class="price">Rs 1,499</p>
+                <a href="https://lessthan1thousand.com/products/mango-light-blue-wide-leg-jeans-only-for-pre-orders-delivery-time-10-15-working-days" target="_blank">View Online</a>
+            </div></div>
+            <div class="product-card reveal"> 
+            <div class="item">
+                <img src="./IMG-20251116-WA0020.jpg" alt="Gray Sweatpants">
+                <h3>Light Gray Sweatpants</h3>
+                <p class="price">Rs 1,450</p>
+                <a href="https://lessthan1thousand.com/products/lt1k-grey-wide-leg-trouser-made-for-fall" target="_blank">View Online</a>
+            </div></div>
+        </div>
+    </main>
+    <script>
+const items = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    items.forEach(i => {
+        const pos = i.getBoundingClientRect().top;
+        ;
+        if (pos < window.innerHeight - 100) i.classList.add("active");
+    });
+});
+document.querySelector(".theme-btn").addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+})
+    </script>
+</body>
+</html>

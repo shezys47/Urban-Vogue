@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Vogue</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+    <header>
+        <Nav>
+            <h1 class="wishlist">Urban Vogue</h1>
+            <a href="./index.html" class="active">Home</a>
+            <a href="./clothes.html">Clothes</a>
+            <a href="./shoes.html">Shoes</a>
+            <a href="./fragrances.html">Fragrances</a>
+            
+        </Nav>
+    </header>
+    <br>
+     <div class="product-card reveal"> 
+    <section class="hero">
+            
+        <h1 class="cool-text">Welcome to My Collections ✨</h1>
+        <p class="typing">A collection of my dream Clothes, Shoes, and Fragrances.</p>
+        <p>Click a category above and explore what I love!</p>
+    </section></div>
+   
+   <script>
+const items = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    items.forEach(i => {
+        const pos = i.getBoundingClientRect().top;
+        ;
+        if (pos < window.innerHeight - 100) i.classList.add("active");
+    });
+});
+document.querySelector(".theme-btn").addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+})
+    </script>
+</body>
+</html>
+

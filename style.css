@@ -1,0 +1,170 @@
+body{
+    /* background-image: url(https://www.lefablier.it/data/files/original/1698/767.webp); */
+    background: url(https://img.edilportale.com/product-thumbs/b_essenza-guardaroba-lei-martini-mobili-452798-rel8ff3e381.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+} 
+.wishlist{
+    color:black;
+    font-weight: bolder;
+    text-align: center;
+    font-family:'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 80px;
+    -webkit-text-stroke: 1px black;
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: 50px;
+    
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+nav {
+  text-align: center;
+}
+nav a {
+    margin: 7px;  
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 70px;
+  background: beige;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  border: 2px solid black;
+  border-radius: 100px;
+  transition: background 0.3s, color 0.3s; /* smooth effect */
+}
+nav a:hover {
+  background: burlywood;
+  color: black;
+}
+nav a.active {
+  background: burlywood;
+  color: black;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #000, #444);
+  color: white;
+}
+.wish{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+}
+
+
+.item {
+  margin-top: 10px;
+  width: 220px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.item:hover {
+  transform: scale(1.05);
+}
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.price {
+  font-weight: bold;
+  color: #444;
+  margin: 8px 0;
+}
+.item a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.item a:hover {
+  background: gray;
+}
+h2 {
+  width: 100%;
+  text-align: left;
+  margin: 40px 0 15px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+.item {
+  width: 250px;
+  background: beige;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.item:hover {
+  transform: scale(1.05);
+}
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.price {
+  font-weight: bold;
+  color: #444;
+  margin: 8px 0;
+}
+.prices {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.prices a {
+  text-decoration: none;
+  background: #000000;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #ffffff;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.prices a:hover {
+  background: #9c9c9c;
+  transform: scale(1.07);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
